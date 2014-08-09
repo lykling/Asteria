@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+OLDGOPATH="$GOPATH";
+export GOPATH=`pwd`;
+go "$@"
+export GOPATH="$OLDGOPATH"
